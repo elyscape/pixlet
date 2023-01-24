@@ -123,7 +123,7 @@ jobs:
         if: matrix.os == 'ubuntu-22.04'
         run: make release-linux
         env:
-          GLIBC_VERSION: "2.25"
+          GLIBC_VERSION: "2.17"
           PIXLET_VERSION: ${{ steps.vars.outputs.tag }}
 
       - name: Build Release macOS
